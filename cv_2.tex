@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[overlapped, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Jelle Vanhorenbeke} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+% Your address
+\moveleft.5\hoffset\centerline{jv.vanhorenbeke@gmail.com}
+\moveleft.5\hoffset\centerline{San Francisco, CA 94110} 
+\moveleft.5\hoffset\centerline{(312) 890-7147}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+% \section{OBJECTIVE}\smallskip
+
+% To obtain a career that will allow myself to take full advantage of my passion and experience in software engineering and development operations. 
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}\smallskip
+
+{\sl Senior Software Engineer - Predictive Team} \hfill May 2017 - Present \\
+Radius Intelligence, San Francisco, CA
+\begin{itemize}
+\item Member of Predictive team responsible for generating ML / AI models for predictive marketing.
+\item Analyzed Random Forest outputs using Spark Scala and serving optimum predictions to the application.
+\item Owner of Job Server microservice between Predictive Jobs (model generation) and Radius Application (consumer).
+\end{itemize} 
+
+{\sl Software Engineer - Integrations Team} \hfill January 2016 - April 2017 \\
+Radius Intelligence, San Francisco, CA
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Member of Integrations team responsible for building the core Radius application in Java and Jersey.
+\item Led development of Radius’s MAT integration (Eloqua) by architecting, implementing, and testing the integration.
+\item Built and maintained other integrations with CRMs and MATs (Salesforce, Marketo, Facebook).
+\item Collaborated with frontend team by designing UI / UX interactions and flows in React Javascript.
+\item Designed and implemented several customer requested, highly visible application features such as Scheduled Deployments.
+\item Led the backend design and development of the Twitter integration.
+\end{itemize}
+ 
+{\sl Software Engineer (Liferay Consultant)} \hfill January 2015 - January 2016 \\
+Nintendo Of America, Chicago, IL
+\begin{itemize} 
+\item Member of Nintendo’s engineering team responsible for creating a developer platform based on Liferay Portal.
+\item Owned and delivered the TestRail and Liferay integration in 6 months.
+\item Implemented a RESTful API with Liferay for integration with TestRail services.
+\item Designed and developed the integration wizard frontend using JavaScript (jQuery) and SASS.
+\item Created a web based UI test harness to analyze response times and messages.
+\end{itemize} 
+
+{\sl Junior Software Engineer} \hfill August 2013 - January 2015 \\
+Liferay, Chicago, IL
+\begin{itemize} 
+\item Designed, developed, and tested an external-facing web portal during a 7 month project.
+\item Architected new development environment to improve builds and remote deploys using Apache ANT scripts, Ivy for dependencies, and Jenkins for Continuous Integration.
+\item Integrated the Jenkins Continuous Integration(CI) systems into the existing deployment processes.
+\item Designed and implemented a strategy to migrate the client’s data and standards to Liferay custom entities.
+\end{itemize} 
+
+{\sl Full Stack Developer} \hfill August 2011 - August 2012 \\
+Vodafone Group, Madrid, Spain
+\begin{itemize} 
+\item Part of Vodafone’s online store for business team responsible for maintaining the application.
+\item Designed automation systems in the content manager using C\# and .NET.
+\item Created SQL procedures in SQL Server to generate new reports for the business department.
+\item Implemented end-to-end application security in conjunction with an external security audit firm.
+\end{itemize} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EDUCATION}\smallskip
+
+{\sl Master in Information Technology and Management} \hfill 2013 \\
+Illinois Institute of Technology
+\begin{itemize}
+\item Awarded a merit-based International Partnership half tuition scholarship.
+\item Teaching Assistant for HTML5 and CSS3 course.
+\end{itemize} 
+
+{\sl Bachelor in Computer Science/Engineering} \hfill 2012 \\
+Technical University of Madrid
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Top CS program in Spain and Europe, highest honors in multiple courses.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{ACTIVITIES}\smallskip
+% {\hrule width\resumewidth height 1pt}\smallskip
+
+Golden Gate Triathlon Club, {\sl Ambassador Team} \hfill January 2017 - Present\\
+Hackbright Academy, {\sl Mentor} \hfill July 2016 - January 2017\\
+Ultramarathon, {\sl finisher} \hfill December 2016 \\
+
+%----------------------------------------------------------------------------------------
+%	Technology SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TECHNOLOGY SKILLS}\smallskip
+
+{\sl Programming Languages:} Java, JavaScript, Scala, C\#, SQL \\
+{\sl Other Technologies:} Spring framework, PostgreSQL, MySQL, Spark, Heroku \\
+ 
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
