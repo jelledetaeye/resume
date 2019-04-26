@@ -22,27 +22,38 @@
 
 \documentclass[overlapped, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
+\usepackage[margin=0.5in,]{geometry}
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+% Increase text height
+\textheight=700pt
+
+\newsectionwidth{0.2in}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	NAME AND ADDRESS SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% \name{Jelle Vanhorenbeke}
 
 \moveleft.5\hoffset\centerline{\large\bf Jelle Vanhorenbeke} % Your name at the top
  
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
 % Your address
-\moveleft.5\hoffset\centerline{jelle.jdc@gmail.com}
-\moveleft.5\hoffset\centerline{San Francisco, CA 94118} 
-\moveleft.5\hoffset\centerline{(872) 588-0294}
+\moveleft.5\hoffset\centerline{jelle.jdc@gmail.com | (872) 588-0294}
+% \moveleft.5\hoffset\centerline{San Francisco, CA 94118} 
 
-%----------------------------------------------------------------------------------------
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+% \address{Address 1 line 1\\Address 1 line 2\\Address 1 line 3}
+% \address{Address 2 line 1\\Address 2 line 2\\Address 2 line 3}
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+
+% %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
@@ -57,14 +68,33 @@
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
- 
-\section{EXPERIENCE}\smallskip
+
+\section{EXPERIENCE}\smallskip 
+
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+% \employer{Ask Jarvis}
+% \location{San Francisco, CA}
+% \dates{November 2018 - Present}
+% \title{\textbf{Co-Founder | Software Engineer}}
+% \begin{position}
+% \end{position}
 
 {\sl \textbf{Co-Founder | Software Engineer}} \hfill November 2018 - Present \\
 Ask Jarvis, San Francisco, CA
+\begin{itemize}
+\item Designed and built a Telemedicine platform for Veterinarians and Pet Parents. To accomplish this we used React Native for the mobile app and Java/Spring for our backend services.
+\end{itemize}
 
 {\sl \textbf{Senior Software Engineer | Search Team}} \hfill November 2017 - October 2018 \\
-Radius Intelligence, San Francisco, CA
+Radius Intelligence \hfill San Francisco, CA
 \begin{itemize}
 \item Responsible for designing and building a custom search query language as part of the External Search API.
 \item Designed and built Data ingest API microservice.
@@ -73,7 +103,7 @@ Radius Intelligence, San Francisco, CA
 \end{itemize} 
 
 {\sl \textbf{Senior Software Engineer | Predictive Team}} \hfill May 2017 - November 2017 \\
-Radius Intelligence, San Francisco, CA
+Radius Intelligence \hfill San Francisco, CA
 \begin{itemize}
 \item Member of Predictive team responsible for generating ML / AI models for predictive marketing.
 \item Analyzed Random Forest outputs using Spark Scala and served optimum predictions to the application.
@@ -81,20 +111,36 @@ Radius Intelligence, San Francisco, CA
 \end{itemize} 
 
 {\sl \textbf{Software Engineer | Integrations Team}} \hfill January 2016 - April 2017 \\
-Radius Intelligence, San Francisco, CA
+Radius Intelligence \hfill San Francisco, CA
 \begin{itemize} \itemsep -2pt % Reduce space between items
+\item Member of Integrations team responsible for building the core Radius application in Java and Jersey.
+\item Led development of Radius’s MAT integration (Eloqua) by architecting, implementing, and testing the integration.
 \item Built and maintained other integrations with CRMs and MATs (Salesforce, Marketo, Facebook).
+\item Collaborated with frontend team by designing UI / UX interactions and flows in React Javascript.
 \item Designed and implemented several customer requested, highly visible application features such as Scheduled Deployments.
+\item Led the backend design and development of the Twitter integration.
 \end{itemize}
  
 {\sl \textbf{Software Engineer}} \hfill January 2015 - January 2016 \\
-Nintendo Of America, Chicago, IL
+Nintendo Of America \hfill Chicago, IL
+\begin{itemize} 
+\item Member of Nintendo’s engineering team responsible for creating a developer platform based on Liferay Portal.
+\item Implemented a RESTful API with Liferay for integration with TestRail services.
+\item Created a web based UI test harness to analyze response times and messages.
+\end{itemize} 
 
 {\sl \textbf{Junior Software Engineer}} \hfill August 2013 - January 2015 \\
-Liferay, Chicago, IL
+Liferay \hfill Chicago, IL
+% \begin{itemize} 
+% \item Designed, developed, and tested an external-facing web portal during a 7-month project.
+% \item Architected new development environment to improve builds and remote deploys using Apache ANT scripts, Ivy for dependencies, and Jenkins for Continuous Integration.
+% \end{itemize} 
 
-{\sl \textbf{Full Stack Developer}} \hfill August 2011 - August 2012 \\
-Vodafone Group, Madrid, Spain
+{\sl \textbf{Full Stack Engineer}} \hfill August 2011 - August 2012 \\
+Vodafone Group \hfill Madrid, Spain
+% \begin{itemize} 
+% \item Part of Vodafone’s online store for business team responsible for maintaining the application.
+% \end{itemize} 
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION EXPERIENCE SECTION
@@ -104,9 +150,15 @@ Vodafone Group, Madrid, Spain
 
 {\sl Master in Information Technology and Management} \hfill 2013 \\
 Illinois Institute of Technology
+\begin{itemize}
+\item Awarded a merit-based International Partnership scholarship.
+\end{itemize} 
 
 {\sl Bachelor in Computer Science/Engineering} \hfill 2012 \\
 Technical University of Madrid
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item Top CS program in Spain and Europe, highest honors in multiple courses.
+\end{itemize}
 
 \end{resume}
 \end{document}
